@@ -162,6 +162,7 @@ nav ul li a:hover{
     color: white;
     background-image: linear-gradient(to bottom, rgb(3, 2, 58), rgb(7, 7, 158), rgb(12, 8, 202));
 }
+
 .imagem h1{
     font-size: 4rem;
     margin: 10%;
@@ -179,16 +180,20 @@ nav ul li a:hover{
     font-style: normal;
     text-shadow: 2px 2px 6px white;
 }
+.sobre{/*atualização*/
+    width: 30%;
+    text-align: center;
+}/*atualização*/
 .sobre h1{
     font-size: 4rem;
     text-align: center;
 }
-.sobre p{
+.sobre p{/*atualização*/
+    text-align: justify;
     line-height: 1.5;
     font-size: 21px;
-    text-align: center;
     margin-top: 7%;
-}
+}/*atualização*/
 .redes h1{
     font-size: 4rem;
 }
@@ -346,7 +351,11 @@ footer h1{
     }
     #sobre{
        display: block;
-    }
+    }  
+     .sobre{/*atualização*/
+        margin: 8%;
+        width: 85%;
+    }/*atualização*/
     .imagem, .redes{
         text-align: center;
     }
