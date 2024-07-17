@@ -5,7 +5,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
+/*-----Início header-----*/
 header{
     max-width: 1300px;
     margin: auto;
@@ -38,13 +38,14 @@ nav ul{
     list-style: none;
 }
 nav ul li{
+    color: #fff;
     display: inline-block;
     margin-right: 20px;
 }
 nav ul li a{
     font-size: 1.5rem;
     text-decoration: none;
-    color: #f4f5f7;
+    color: #fff;
     transition: 1s;
 }
 nav ul li a:hover{
@@ -58,7 +59,8 @@ nav ul li a:hover{
     display: none;
     cursor: pointer;
 }
-
+/*-----Fim header-----*/
+/*-----Início banner-----*/
 .banner{
     overflow: hidden;
     background-image: url(../arquivos/img/bannerp.jpg);
@@ -98,13 +100,84 @@ nav ul li a:hover{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
 }
-
+/*-----Fim banner-----*/
+/*-----Início slides-----*/
+.servicos{
+    background-image: linear-gradient(to bottom, rgb(23, 38, 255), rgb(9, 23, 219));
+}
+.servicos h1{
+    color: #fff;
+    margin-top: 5%;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.section-header{
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+section .carrossel{
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+a, a:link, a:visited{
+    overflow: hidden;
+    color: #212121;
+    text-decoration: none;
+}
+.carousel-slider{
+    overflow: hidden;
+    height: 560px;
+    position: relative;
+    width: 100%;
+}
+.carousel-slider.fullwidth{
+    height: 500px;
+}
+.carousel-slider.fullwidth .slider-item{
+    height: 480px;
+    line-height: 480px;
+    width: 100%;
+}
+.slider-wrapper{
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+    perspective: 800px !important;
+}
+.slider-item{
+    box-shadow: 0 1px 3px rgba(0, 0, 0,.6), 0 1px 2px rgba(0, 0, 0,.12);
+    display: none;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 320px;
+    cursor: pointer;
+}
+    .superHero1{background-image: url(../arquivos/img/slid.jpg); border-radius: 50px !important;}
+    .superHero2{background-image: url(../arquivos/img/slid1.jpeg); border-radius: 50px !important;}
+    .superHero3{background-image: url(../arquivos/img/slid2.jpeg); border-radius: 50px !important;}
+    .superHero4{background-image: url(../arquivos/img/slid3.jpeg); border-radius: 50px !important;}
+    .superHero5{background-image: url(../arquivos/img/slid4.jpeg); border-radius: 50px !important;}
+    .superHero6{background-image: url(../arquivos/img/slid5.jpeg); border-radius: 50px !important;}
+    .superHero7{background-image: url(../arquivos/img/slid6.jpg); border-radius: 50px !important;}
+/*-----Fim slides-----*/
+/*-----Início botões-----*/
 .botoes{
     color: white;
     background-image: linear-gradient(to bottom, rgb(9, 23, 219), rgb(1, 4, 46));
 }
 .caixa{
-    margin-top: 5%;
+    margin-top: 0;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -129,7 +202,8 @@ nav ul li a:hover{
 .card #button{
     height: 50px;
 }
-
+/*-----Fim botões-----*/
+/*-----Início orçamento-----*/
 .orcamento{
     color: white;
     background-image: linear-gradient(to bottom, rgb(1, 4, 46), rgb(0, 0, 2), rgb(3, 2, 58));
@@ -155,14 +229,14 @@ nav ul li a:hover{
 .orcamento ion-icon:hover{
     transform: scale(1.1);
 }
-
+/*-----Fim orçamento-----*/
+/*-----Início sobre-----*/
 #sobre{
     justify-content: space-between;
     display: flex;
     color: white;
     background-image: linear-gradient(to bottom, rgb(3, 2, 58), rgb(7, 7, 158), rgb(12, 8, 202));
 }
-
 .imagem h1{
     font-size: 4rem;
     margin: 10%;
@@ -198,7 +272,7 @@ nav ul li a:hover{
     font-size: 4rem;
 }
 .icons ul li ion-icon{
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: 5%;
     margin-left: 40%;
     font-size: 4rem;
@@ -208,7 +282,8 @@ nav ul li a:hover{
 .icons ul li ion-icon:hover{
     transform: scale(1.1);
 }
-
+/*-----Fim sobre-----*/
+/*-----Início footer-----*/
 footer{
     background-color: black;
     color: #fff;
@@ -247,7 +322,22 @@ footer h1{
 .number ion-icon:hover{
     transform: scale(1.1);
 }
+/*-----Fim footer-----*/
 
+/*-----Início animação scroll-----*/
+.animacao{
+    opacity: 0;
+    filter: blur(15px);
+    transition: 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: 2s;
+}
+/*-----Fim animação scroll-----*/
+
+/*-----Início mobile-----*/
 @media (max-width: 420px){
     #menu{
         display: none;
@@ -351,11 +441,13 @@ footer h1{
     }
     #sobre{
        display: block;
-    }  
-     .sobre{/*atualização*/
+    }
+    /*atualização*/
+    .sobre{
         margin: 8%;
         width: 85%;
-    }/*atualização*/
+    }
+    /*atualização*/
     .imagem, .redes{
         text-align: center;
     }
