@@ -5,13 +5,13 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
-@media (max-width: 2040px){
+@media (max-width: 3000px){
     /*-----Início header-----*/
     header{
         max-width: 100%;
         margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 100px;
+        padding-right: 200px;
         background-color: rgb(51, 50, 50);
     }
     .navegacao{
@@ -24,11 +24,7 @@
     }
     .navegacao a h1{
         color: #fff;
-        font-size: 45px;
-    }
-    .navegacao #logo{
-        width: 30%;
-        
+        font-size: 75px;
     }
     nav{
         flex: 1;
@@ -43,7 +39,7 @@
         margin-right: 20px;
     }
     #menu ul li a{
-        font-size: 2rem;
+        font-size: 4rem;
         text-decoration: none;
         color: #fff;
         transition: 1s;
@@ -65,7 +61,7 @@
         overflow: hidden;
         background-image: url(../arquivos/img/bannerp.jpg);
         width: 100%;
-        height: 920px;
+        height: 1500px;
         background-repeat: no-repeat;
         background-size: cover;  
     }
@@ -73,8 +69,350 @@
         position: absolute;
         color: white;
         margin-top: 1%;
-        right: 2%;
+        right: 10%;
         text-shadow: 4px 4px 6px rgba(0, 0, 2, 0.568);
+    }
+    .text h1{
+        font-size: 15rem; 
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .text p{
+        margin-left: 40%;
+        font-size: 5rem;
+    }
+    .banner img{
+        margin-top: 14%;
+        width: 70%;
+        margin-left: 17%;
+    }
+    .circulo{
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.562);
+        margin-top: 25%;
+        margin-left: -5%;
+        width: 60%;
+        height: 122%;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+    /*-----Fim banner-----*/
+    /*-----Início slides-----*/
+    .servicos{
+        background-image: linear-gradient(to bottom, rgb(23, 38, 255), rgb(9, 23, 219));
+    }
+    .servicos h1{
+        color: #fff;
+        margin-top: 5%;
+        font-size: 10rem;
+        text-align: center;
+        text-shadow: 4px 4px 6px white;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .section-header{
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        text-align: center;
+    }
+    section .carrossel{
+        padding-top: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+    a, a:link, a:visited{
+        overflow: hidden;
+        color: #212121;
+        text-decoration: none;
+    }
+    .carousel-slider{
+        overflow: hidden;
+        height: 560px;
+        position: relative;
+        width: 100%;
+    }
+    .carousel-slider.fullwidth{
+        height: 500px;
+    }
+    .carousel-slider.fullwidth .slider-item{
+        height: 480px;
+        line-height: 480px;
+        width: 100%;
+    }
+    .slider-wrapper{
+        overflow: hidden;
+        position: relative;
+        transform-style: preserve-3d;
+        transform-origin: 0 50%;
+        perspective: 800px !important;
+    }
+    .slider-item{
+        box-shadow: 0 1px 3px rgba(0, 0, 0,.6), 0 1px 2px rgba(0, 0, 0,.12);
+        display: none;
+        height: 320px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 320px;
+        cursor: pointer;
+    }
+        .superHero1{background-image: url(../arquivos/img/slid.jpg); border-radius: 50px !important;}
+        .superHero2{background-image: url(../arquivos/img/slid1.jpeg); border-radius: 50px !important;}
+        .superHero3{background-image: url(../arquivos/img/slid2.jpeg); border-radius: 50px !important;}
+        .superHero4{background-image: url(../arquivos/img/slid3.jpeg); border-radius: 50px !important;}
+        .superHero5{background-image: url(../arquivos/img/slid4.jpeg); border-radius: 50px !important;}
+        .superHero6{background-image: url(../arquivos/img/slid5.jpeg); border-radius: 50px !important;}
+        .superHero7{background-image: url(../arquivos/img/slid6.jpg); border-radius: 50px !important;}
+    /*-----Fim slides-----*/
+    /*-----Início botões-----*/
+    .botoes{
+        color: white;
+        background-image: linear-gradient(to bottom, rgb(9, 23, 219), rgb(1, 4, 46));
+    }
+    .caixa{
+        margin-top: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+    .card button{
+        font-weight: 750;
+        border: none;
+        margin: 15px;
+        width: 700px;
+        font-size: 35px;
+        height: 55px;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(45, 45, 184);
+        cursor: pointer;
+        transition: transform 2s;
+    }
+    .card button:hover{
+        transform: scale(1.1);
+        background-color: rgb(10, 13, 185);
+    }
+    .card #button{
+        height: 50px;
+    }
+    /*-----Fim botões-----*/
+    /*-----Início orçamento-----*/
+    .orcamento{
+        color: white;
+        background-image: linear-gradient(to bottom, rgb(1, 4, 46), rgb(0, 0, 2), rgb(3, 2, 58));
+    }
+    .orcamento .pac{
+        margin: 5%;
+        display: flex;
+    }
+    .orcamento h1{
+        margin-left: 32%;
+        text-align: center;
+        font-size: 6rem;
+        text-shadow: 5px 5px 8px white;
+    }
+    .orcamento ion-icon{
+        color: green;
+        margin: 1%;
+        font-size: 8rem;
+        cursor: pointer;
+        transition: transform 1s;
+        overflow-x: hidden !important;
+    }
+    .orcamento ion-icon:hover{
+        transform: scale(1.1);
+    }
+    /*-----Fim orçamento-----*/
+    /*-----Início sobre-----*/
+    #sobre{
+        justify-content: space-between;
+        display: flex;
+        color: white;
+        background-image: linear-gradient(to bottom, rgb(3, 2, 58), rgb(7, 7, 158), rgb(12, 8, 202));
+    }
+    .imagem{
+        margin: 5%;
+    }
+    .imagem h1, .redes h1, .sobre h1{
+        font-size: 7rem;
+    }
+    .imagem img{
+        margin: 5%;
+        width: 150%;
+    }
+    .redes{
+        margin-top: 2%;
+    }
+    #sobre h1{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-shadow: 5px 5px 6px white;
+    }
+    .sobre{/*atualização*/
+        width: 30%;
+        text-align: center;
+    }/*atualização*/
+    .sobre h1{
+        text-align: center;
+    }
+    .sobre p{/*atualização*/
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 40px;
+        margin-top: 7%;
+    }/*atualização*/
+    .redes{
+    
+        padding-right: 60px;
+    }
+    .icons ul li ion-icon{
+        color: rgb(255, 255, 255);
+        margin-top: 5%;
+        margin-left: 40%;
+        font-size: 7rem;
+        cursor: pointer;
+        transition: transform 1s;
+    }
+    .icons ul li ion-icon:hover{
+        transform: scale(1.1);
+    }
+    /*-----Fim sobre-----*/
+    /*-----Início footer-----*/
+    footer{
+        background-color: black;
+        color: #fff;
+    }
+    footer h1{
+        margin-left: 5%;
+        margin-top: 1%;
+        font-size: 10rem;
+        text-align: center;
+        text-shadow: 6px 6px 8px white;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 1%;
+        font-weight:600;
+    }
+    .infos p{
+        font-size: 2.5rem;
+        line-height: 2;
+    }
+    .number{
+        display: flex;
+    }
+    .number ion-icon{
+        transition: transform 1s;
+        color: green;
+        font-size: 3.5rem;
+        cursor: pointer;
+        margin: 3px;
+    }
+    .number ion-icon:hover{
+        transform: scale(1.2);
+    }
+    /*-----Fim footer-----*/    
+    /*-----Início animação scroll-----*/
+    .animacao{
+        opacity: 0;
+        filter: blur(15px);
+        transition: 2s;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transition: 2s;
+    }
+    /*-----Fim animação scroll-----*/
+}
+@media (max-width: 2900px){
+    .text{right: 5%;}
+    .text h1{font-size: 12rem; }
+    .text p{font-size: 4rem;}
+    .banner{height: 1400px;}
+    .banner img{
+        margin-top: 10%;
+        width: 68%;
+    }
+    .circulo{
+        margin-top: 26%;
+    }
+}
+@media (max-width: 2800px){
+    .banner img{margin-top: 13%;}
+}
+@media (max-width: 2700px){
+    .banner img{margin-top: 14%; width: 75%; margin-left: 14%;}
+    footer h1{
+        font-size:8rem;
+    }
+}
+@media (max-width: 2600px){
+    .banner img{margin-top: 17%;}
+}
+@media (max-width: 2550px){
+    .circulo{
+       height: 105%;
+    }
+}
+@media (max-width: 2500px){
+    .banner img{margin-top: 14%;}
+    .circulo{
+        margin-top: 30%;
+    }
+}
+@media (max-width: 2400px){
+    .circulo{margin-top: 32%;}
+    .caixa{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .card button{
+        width: 550px;
+        font-size: 30px;
+        height: 55px;
+    }
+    .orcamento h1{
+        margin-left: 25%;
+    }
+}
+@media (max-width: 2300px){
+    .circulo{margin-top: 35%;}
+}
+@media (max-width: 2200px){
+    .circulo{
+        margin-top: 38%;
+        height: 100%;
+}
+}
+@media (max-width: 2100px){
+    header{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .navegacao a h1{
+        color: #fff;
+        font-size: 45px;
+    }
+    #menu ul li a{
+        font-size: 2rem;
+    }
+    .banner{
+        width: 100%;
+        height: 1050px;
     }
     .text h1{
         font-size: 10rem; 
@@ -86,21 +424,63 @@
         margin-left: 40%;
         font-size: 3rem;
     }
+    .circulo{
+        margin-top: 23%;
+        width: 60%;
+        height: 122%;
+    }
+    footer{
+        background-color: black;
+        color: #fff;
+    }
+    footer h1{
+        margin-left: 5%;
+        margin-top: 5%;
+        font-size: 7rem;
+        text-align: center;
+        text-shadow: 4px 4px 6px white;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        font-weight:600;
+    }
+    .infos p{
+        font-size: 2rem;
+        line-height: 2;
+    }
+    .number{
+        display: flex;
+    }
+    .number ion-icon{
+        transition: transform 1s;
+        color: green;
+        font-size: 3.5rem;
+        cursor: pointer;
+        margin: 3px;
+    }
+    .number ion-icon:hover{
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 2040px){
+    .banner{
+        width: 100%;
+        height: 920px;
+    }
     .banner img{
         margin-top: 10%;
         width: 70%;
         margin-left: 17%;
     }
-    .circulo{
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.562);
-        margin-top: 23%;
-        margin-left: -5%;
-        width: 60%;
-        height: 122%;
-        border-radius: 50%;
-        background-color: rgb(255, 255, 255);
-    }
-    /*-----Fim banner-----*/
     /*-----Início slides-----*/
     .servicos{
         background-image: linear-gradient(to bottom, rgb(23, 38, 255), rgb(9, 23, 219));
@@ -291,61 +671,6 @@
     .icons ul li ion-icon:hover{
         transform: scale(1.1);
     }
-    /*-----Fim sobre-----*/
-    /*-----Início footer-----*/
-    footer{
-        background-color: black;
-        color: #fff;
-    }
-    footer h1{
-        margin-left: 5%;
-        margin-top: 5%;
-        font-size: 7rem;
-        text-align: center;
-        text-shadow: 4px 4px 6px white;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-    }
-    .infos{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 3%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-        font-weight:600;
-    }
-    .infos p{
-        font-size: 2rem;
-        line-height: 2;
-    }
-    .number{
-        display: flex;
-    }
-    .number ion-icon{
-        transition: transform 1s;
-        color: green;
-        font-size: 3.5rem;
-        cursor: pointer;
-        margin: 3px;
-    }
-    .number ion-icon:hover{
-        transform: scale(1.2);
-    }
-    /*-----Fim footer-----*/    
-    /*-----Início animação scroll-----*/
-    .animacao{
-        opacity: 0;
-        filter: blur(15px);
-        transition: 2s;
-    }
-    .show{
-        opacity: 1;
-        filter: blur(0);
-        transition: 2s;
-    }
-    /*-----Fim animação scroll-----*/
 }
 @media (max-width: 1915px){
     .banner img{
@@ -726,6 +1051,17 @@ footer h1{
         margin-left: -5%;
         width: 60%;
         height: 100%;
+    }
+    .agendamento{
+        background-color: black;
+        color: white;
+    }
+    .agendamento H2{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        padding: 20%;
+        margin-left: 8%;
     }
     .orcamento h1{
         margin-left: 18%;
