@@ -200,6 +200,84 @@
         height: 50px;
     }
     /*-----Fim botões-----*/
+      /*-----Início modal botões-----*/
+      .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{
+        width: 100vw;
+        height: 110%;
+        position: absolute;
+        top: 200%;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999999;
+        transition: transform 1s;
+    }
+    .modal h2, .modal1 h2, .modal2 h2, .modal3 h2, .modal4 h2, .modal5 h2, .modal6 h2, .modal7 h2, .modal8 h2, .modal9 h2{
+        margin-top: 2%;
+        color: #fff;
+        font-size: 4.5rem;
+        text-align: center;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .descricao{
+        background-color: #0a087e;
+        padding: 60px;
+        margin-top: 3%;
+        margin-bottom: 7%;
+        border-radius: 20px;
+    }
+    .descricao p{
+        font-size: 2.5rem;
+    }
+    .modal, .modal1, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9{
+        width: 60%;
+        height: auto;
+        min-width: 450px;
+        min-height: 200px;
+        background-color: #060549;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 20px;
+    }
+    .fechar{
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 30%;
+        font-size: 3rem;
+        border-radius: 50%;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
+ /*   .modal1 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar, .modal7 .fechar{
+        margin-top: 18%;
+    }
+    .modal2 .fechar, .modal3 .fechar, .modal6 .fechar, .modal9 .fechar{
+        margin-top: 18%;
+    }*/
+    .janela-modal.abrir, .janela-modal1.abrir, .janela-modal2.abrir, .janela-modal3.abrir, .janela-modal4.abrir, .janela-modal5.abrir, .janela-modal6.abrir, .janela-modal7.abrir, .janela-modal8.abrir, .janela-modal9.abrir{
+        display: flex;
+    }
+
+    @keyframes abrirmodal{
+        from{
+            opacity: 0;
+            transform: translate3d(0, -20px, -5px);
+        }
+        to{
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .abrir .modal, .abrir .modal1, .abrir .mobile2, .abrir .mobile3, .abrir .mobile4, .abrir .mobile5, .abrir .mobile6, .abrir .mobile7, .abrir .mobile8, .abrir .mobile9{
+        animation: abrirmodal 1s;
+    }
+    /*-----Fim modal botões-----*/
     /*-----Início orçamento-----*/
     .orcamento{
         color: white;
@@ -679,29 +757,42 @@
     .circulo{
         margin-top: 26%;
     }
+    .modal7 .fechar, .modal9 .fechar{margin-top: 15%;}
 }
 @media (max-width: 2800px){
     .banner img{margin-top: 13%;}
+    .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 18%;}
+    .fechar{margin-top: 19%;}
 }
 @media (max-width: 2700px){
     .banner img{margin-top: 14%; width: 75%; margin-left: 14%;}
     footer h1{
         font-size:8rem;
     }
+    .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 20%;}
+    .fechar{margin-top: 20%;}
 }
 @media (max-width: 2600px){
     .banner img{margin-top: 17%;}
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 230%;}
+    .fechar{margin-top: 20%;}
 }
 @media (max-width: 2550px){
-    .circulo{
-       height: 105%;
-    }
+    .circulo{height: 105%;}
+    .fechar{margin-top: 21%;}
 }
 @media (max-width: 2500px){
     .banner img{margin-top: 14%;}
     .circulo{
         margin-top: 30%;
     }
+    .janela-modal h2{font-size: 3rem;}
+    .descricao p{font-size: 2rem;}
+    .modal .fechar{
+        margin-top: 18%;
+    }
+    .fechar{margin-top: 19%;}
+    .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 17%;}
 }
 @media (max-width: 2400px){
     .circulo{margin-top: 32%;}
@@ -717,15 +808,30 @@
     .orcamento h1{
         margin-left: 25%;
     }
+    .fechar{margin-top: 20%;}
 }
 @media (max-width: 2300px){
     .circulo{margin-top: 35%;}
+    .modal h2, .modal1 h2, .modal2 h2, .modal3 h2, .modal4 h2, .modal5 h2, .modal6 h2, .modal7 h2, .modal8 h2, .modal9 h2{
+        font-size: 2.5rem;
+    }
+    .descricao p{font-size: 1.5rem;}
+    .modal .fechar{margin-top: 15%;}
+    .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 15%;}
+    .modal5 .fechar, .modal8 .fechar{margin-top: 16%;}
+    .fechar{margin-top: 14%;}
 }
 @media (max-width: 2200px){
     .circulo{
         margin-top: 38%;
         height: 100%;
 }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 260%;}
+    .modal .fechar, .modal1 .fechar{
+        margin-top: 18%;
+    }
+    .modal2 .fechar, .modal3 .fechar, .modal4 .fechar{margin-top: 17%;}
+    .modal6 .fechar{margin-top: 15%;}
 }
 @media (max-width: 2100px){
     header{
@@ -743,6 +849,9 @@
         width: 100%;
         height: 1050px;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 210%;}
+    .modal5 .fechar, .modal8 .fechar{margin-top: 18%;}
+    .modal6 .fechar{margin-top: 17%;}
     .text h1{
         font-size: 10rem; 
         font-family: "Barlow Semi Condensed", sans-serif;
@@ -808,6 +917,9 @@
         margin-top: 10%;
         width: 70%;
         margin-left: 17%;
+    }
+    .imagem img{
+        margin: 1%;
     }
     /*-----Início slides-----*/
     .servicos{
@@ -879,6 +991,8 @@
         .superHero6{background-image: url(../arquivos/img/slid5.jpeg); border-radius: 50px !important;}
         .superHero7{background-image: url(../arquivos/img/slid6.jpg); border-radius: 50px !important;}
     /*-----Fim slides-----*/
+    .janela-modal{top: 210%;}
+    .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar{margin-top: 19%;}
     /*-----Início botões-----*/
     .botoes{
         color: white;
@@ -956,7 +1070,7 @@
     
     }
     .imagem img{
-        margin: 1%;
+        margin: 2%;
     }
     .redes{
         margin-top: 2%;
@@ -1005,8 +1119,17 @@
         width:68%;
     }
     .circulo{
+        height: 110%;
         margin-top: 26%;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 190%;}
+    .modal .fechar, .modal1 .fechar{
+        margin-top: 18;
+    }
+    .modal .fechar, .modal1 .fechar, .modal8 .fechar{margin-top: 19%;}
+     .modal7 .fechar{margin-top: 16%;}
+    .modal4 .fechar{margin-top: 18%;}
+    .modal9 .fechar{margin-top: 17%;}
 }
 @media (max-width: 1800px){
     .circulo{
@@ -1015,11 +1138,20 @@
     footer h1{
         font-size: 6rem;
         text-shadow: 4px 4px 6px white;
-
     }
     .infos p{
         font-size: 1.5rem;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 240%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 19%;}
+}
+@media (max-width: 1700px){
+    .circulo{
+        height: 100%;
+    }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 260%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 21%;}
 }
 @media (max-width: 1670px){
     .banner img{
@@ -1044,14 +1176,16 @@
     .redes h1, .imagem h1, .sobre h1{
         font-size: 4rem;
     }
- 
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 240%;}
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 22%;}
+    .modal .fechar{margin-top: 23%;}
 }
 @media (max-width: 1560px){
     .banner{
         height: 800px;
     }
     .banner img{
-        width: 60%;
+        width: 65%;
         margin-left: 20%;
     }
     .text h1{
@@ -1063,6 +1197,7 @@
     }
     .circulo{
         margin-top: 31%;
+        width: 55%;
     }
     .caixa{
         padding-left: 30px;
@@ -1073,6 +1208,53 @@
         font-size: 25px;
         height: 40px;
     }
+    .descricao p{font-size: 1.3rem;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 22%;}
+}
+@media (max-width: 1470px){
+    .banner{
+        overflow: hidden;
+        width: 100%;
+        height: 700px; 
+    }
+    .text h1{
+        font-size: 6rem; 
+    }
+    .text p{
+        margin-left: 45%;
+        font-size: 2rem;
+    }
+        .banner img{
+            margin-top: 15%;
+            width: 80%;
+            margin-left: 11%;
+        }
+        .circulo{
+            margin-top: 21%;
+            width: 58%;
+            height: 115%;
+        }
+        .caixa{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .card button{
+            width: 300px;
+            font-size: 20px;
+            height: 35px;
+        }
+        .orcamento h1{
+            margin-left: 30%;
+            text-align: center;
+            font-size: 4rem;
+        }
+        .orcamento ion-icon{
+            font-size: 5rem;
+        }
+        .imagem{
+            margin: 1%;
+        }
+    .modal .fechar, .modal3 .fechar{margin-top: 24%;}
 }
 @media (max-width: 1400px){
     .banner{
@@ -1116,99 +1298,228 @@
             font-size: 5rem;
         }
 }
+@media (max-width: 1350px){
+    .circulo{
+        height: 105%;
+        margin-top: 25%;
+    }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 290%;}
+    .modal h2, .modal1 h2, .modal2 h2, .modal3 h2, .modal4 h2, .modal5 h2, .modal6 h2, .modal7 h2, .modal8 h2, .modal9 h2{font-size: 2rem;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar{margin-top: 21%;}
+    .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 20%;}
+    .descricao p{font-size: 1rem ;}
+}
 @media (max-width: 1270px){
-/*-----Início header-----*/
-header{
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.navegacao{
-    padding: 8px;
-}
-.navegacao a h1{
-    font-size: 20px;
-}
-#menu ul li a{
-    font-size: 1.5rem;
-}
-/*-----Fim header-----*/
-/*-----Início banner-----*/
-.banner img{
-    margin-top: 16%;
-    width: 80%;
-    margin-left: 11%;
-}
-.circulo{
-    margin-top: 21%;
-    width: 60%;
-    height: 122%;
-}
-/*-----Fim banner-----*/
-/*-----Início slides-----*/
-.servicos h1{
-    font-size: 5rem;;
-    text-shadow: 2px 2px 5px white;
-}
-/*-----Fim slides-----*/
-/*-----Início sobre-----*/
-.imagem{
-    padding-left: 30px;
-}
-.imagem h1{
-    font-size: 4rem;
-    margin: 10%;
-}
-.redes{
-    margin-top: 5%;
-}
-.sobre h1{
-    font-size: 4rem;
-    text-align: center;
-}
-.sobre p{/*atualização*/
-    font-size: 21px;
-}/*atualização*/
-.redes{
-    padding-right: 30px;
-}
-.redes h1{
-    font-size: 4rem;
-}
-.icons ul li ion-icon{
-    font-size: 4rem;
-}
-/*-----Fim sobre-----*/
-/*-----Início footer-----*/
-footer h1{
-    margin-top: 5%;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 2px 2px 5px white;
-}
-.infos p{
-    font-size: 1rem;
-}
-.number ion-icon{
-    font-size: 3rem;
-}
-/*-----Fim footer-----*/
-}
-@media (max-width: 1100px){
+    /*-----Início header-----*/
+    header{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .navegacao{
+        padding: 8px;
+    }
+    .navegacao a h1{
+        font-size: 20px;
+    }
+    #menu ul li a{
+        font-size: 1.5rem;
+    }
+    /*-----Fim header-----*/
+    /*-----Início banner-----*/
     .banner img{
-        width:72%;
-        margin-top: 15%;
-        margin-left: 16%;
+        margin-top: 16%;
+        width: 80%;
+        margin-left: 11%;
     }
     .circulo{
-        margin-top: 31%;
+        margin-top: 27%;
+        width: 60%;
+        height: 105%;
     }
-    .imagem h1, .sobre h1, .redes h1{
-        font-size: 3rem;
+    /*-----Fim banner-----*/
+    /*-----Início slides-----*/
+    .servicos h1{
+        font-size: 5rem;;
+        text-shadow: 2px 2px 5px white;
+    }
+    /*-----Fim slides-----*/
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 270%;}
+        .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 22%;}
+        .descricao p{font-size: 1rem ;}
+    /*-----Início sobre-----*/
+    .orcamento h1{
+        margin-left: 20%;
+    }
+    .imagem{
+        padding-left: 30px;
+    }
+    .imagem h1{
+        font-size: 4rem;
+        margin: 10%;
+    }
+    .redes{
+        margin-top: 5%;
+    }
+    .sobre h1{
+        font-size: 4rem;
+        text-align: center;
     }
     .sobre p{/*atualização*/
-        font-size: 19px;
+        font-size: 21px;
     }/*atualização*/
-}
+    .redes{
+        padding-right: 30px;
+    }
+    .redes h1{
+        font-size: 4rem;
+    }
+    .icons ul li ion-icon{
+        font-size: 4rem;
+    }
+    /*-----Fim sobre-----*/
+    /*-----Início footer-----*/
+    footer h1{
+        margin-top: 5%;
+        font-size: 5rem;
+        text-align: center;
+        text-shadow: 2px 2px 5px white;
+    }
+    .infos p{
+        font-size: 1rem;
+    }
+    .number ion-icon{
+        font-size: 3rem;
+    }
+    /*-----Fim footer-----*/
+    }
+    @media (max-width: 1200px){
+        .circulo{
+            height: 100%;
+        }
+    .fechar{font-size: 2rem;}
+    .modal .fechar, .modal3 .fechar{margin-top: 25%;}
+    .modal1 .fechar, .modal2 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 24%;}
+    }
+    @media (max-width: 1100px){
+        .banner img{
+            width:72%;
+            margin-top: 12%;
+            margin-left: 16%;
+        }
+        .circulo{
+            margin-top: 38%;
+            height: 90%;
+        }
+        .imagem h1, .sobre h1, .redes h1{
+            font-size: 3rem;
+        }
+        .sobre p{/*atualização*/
+            font-size: 19px;
+        }/*atualização*/
+        .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar{margin-top: 27%;}
+        .modal5 .fechar, .modal8 .fechar{margin-top: 29%;}
+        .modal6 .fechar{margin-top: 31%;}
+        .modal7 .fechar, .modal9 .fechar{margin-top: 25.5%;}
+    }
+    @media (max-width: 1000px){
+        .banner img{
+            width:70%;
+            margin-top: 12%;
+            margin-left: 16%;
+        }
+        .circulo{
+            width: 65%;
+            margin-top: 45%;
+        }
+    
+        .caixa{
+            display: inline;
+            text-align: center;
+        }
+        .card button{
+            width: 450px;
+            font-size: 25px;
+            height: 40px;
+        } 
+        .orcamento h1{
+            margin-left: 200px;
+            font-size: 3rem;
+        }
+        .orcamento ion-icon{
+            margin: 1px;
+            font-size: 4rem;
+        }
+        
+        .imagem h1, .sobre h1, .redes h1{
+            font-size: 5rem;
+        }
+        #sobre{
+            display: block;
+         }
+         /*atualização*/
+         .sobre{
+             margin-left: 28%;
+             text-align: center;
+             width: 50%;
+         }
+         .sobre p{
+            font-size: 25px;
+         }
+         /*atualização*/
+         .imagem, .redes{
+             text-align: center;
+         }
+         .icons ul{
+             display: flex;
+             justify-content: space-around;
+             padding: 5%;
+     
+         }
+         .icons ul li ion-icon{
+             color: white;
+             margin-top: 0%;
+             margin-left: 0%;
+             font-size: 4rem;
+             cursor: pointer;
+         }
+        footer h1{
+            margin-top: 5%;
+        }
+        .infos{
+            display: inline;
+            text-align: center;
+        }
+        .infos p{
+            font-size: 23px;
+            margin-top: 3%;
+    
+        }
+        .number{
+            margin-left: 42%;
+        }
+        .descricao p{font-size: 15px;}
+        .modal h2, .modal1 h2, .modal2 h2, .modal3 h2, .modal4 h2, .modal5 h2, .modal6 h2, .modal7 h2, .modal8 h2, .modal9 h2{font-size: 1.7rem;}
+        .janela-modal, .janela-modal1, .janela-modal2{top: 280%;}
+        .janela-modal3, .janela-modal4, .janela-modal5{top: 295%;}
+        .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 335%;}
+        .fechar{font-size: 1.5rem;}
+        .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal6 .fechar{
+            left: 20%;
+            margin-top: 28.5%;
+        }
+        .modal3 .fechar, .modal4 .fechar, .modal7 .fechar{
+            left: 20%;
+            margin-top: 28%;
+        }
+        .modal5 .fechar, .modal8 .fechar{
+            left: 20%;
+            margin-top: 30%;
+        }
+        .modal9 .fechar{
+            left: 20%;
+            margin-top: 26.5%;
+        }
+    }
 @media (max-width: 970px){
     .banner img{
         width:70%;
@@ -1284,6 +1595,40 @@ footer h1{
     }
     .number{
         margin-left: 42%;
+    }
+}
+@media (max-width: 900px){
+    .banner{
+        width: 100%;
+        height: 500px;
+    }
+    .circulo{
+        width: 60%;
+        height: 100%;
+        margin-top: 30%;
+    }
+    .number{
+        margin-left: 40%;
+    }
+    .janela-modal, .janela-modal1, .janela-modal2{top: 250%;}
+    .janela-modal3, .janela-modal4, .janela-modal5{top: 265%;}
+    .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 310%;}
+    .fechar{font-size: 1.5rem;}
+    .modal .fechar, .modal1 .fechar, .modal2, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{
+        left: 20%;
+        margin-top: 35%;
+    }
+    .modal6 .fechar{
+        left: 20%;
+        margin-top: 38%;
+    }
+   .modal4 .fechar{
+        left: 20%;
+        margin-top: 33%;
+    }
+    .modal7 .fechar, .modal9 .fechar{
+        left: 20%;
+        margin-top: 31%;
     }
 }
 @media (max-width: 860px){
@@ -1426,6 +1771,224 @@ footer h1{
         margin-left: 5%;
     }
 
+}
+@media (max-width: 830px){
+    #menu{
+        display: none;
+    }
+    .abrir{
+        display: block;
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 90%;
+        top: 0px;
+        position: absolute;
+    }
+    .mobile{
+        display: block;
+        background-color: #353a44;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        transition: .3s;
+    }
+    .mobile.open{
+        width: 50%;
+    }
+    .mobile.open ~ .base{
+        display: block;
+    }
+    .mobile .fecha {
+        color: #ffffff;
+        height: 28px;
+        font-size: 40px;
+    }
+    .mobile .fechar:hover{
+        background-color: rgb(46, 133, 233);
+    }
+    .mobile nav ul{
+        list-style: none;
+    }
+    .mobile nav ul li{
+        padding: 20px;
+        text-align: center;
+        display: block;
+        color: #fff;
+    }
+    .mobile nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    .mobile li a:hover{
+        background-color: rgb(46, 133, 233);
+    }
+    .base{
+        background-color: rgba(0, 0, 0, 0.596);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 540px;
+    }
+    .text{
+        left: 0;
+        top: 8%;
+    }
+    .text h1{
+        margin-left: 30%;
+        font-size: 4rem; 
+    }
+    .text p{
+        margin-left: 50%;
+        font-size: 2rem;
+    }
+    .banner img{
+        margin-top: 15%;
+        width: 80%;
+        margin-left: 11%;
+    }
+    .circulo{
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.562);
+        margin-top: 37%;
+        margin-left: -5%;
+        width: 60%;
+        height: 90%;
+    }
+    .agendamento{
+        background-color: black;
+        color: white;
+    }
+    .agendamento H2{
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        padding: 20%;
+        margin-left: 8%;
+    }
+    .orcamento h1{
+        margin-left: 18%;
+        font-size: 3rem;
+    }
+    #sobre{
+       display: block;
+    }
+    /*atualização*/
+    .sobre{
+        margin: 8%;
+        width: 85%;
+    }
+    /*atualização*/
+    .imagem, .redes{
+        text-align: center;
+    }
+    .icons ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+
+    }
+    .icons ul li ion-icon{
+        color: white;
+        margin-top: 0%;
+        margin-left: 0%;
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    .redes h1{
+        margin-left: 5%;
+    }
+    .janela-modal, .janela-modal1{
+        top: 240%;
+        margin-left: 0;
+    }
+    .janela-modal2{
+        top: 220%;
+        margin-left: 0;
+        height: 100%;
+    }
+    .modal2 .fechar{
+        margin-top: 39%;
+    }
+    .janela-modal3, .janela-modal4, .janela-modal5{
+        margin-left: 0;
+        top: 240%;}
+    .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 310%; margin-left: 0;}
+    .fechar{font-size: 1.5rem;}
+    .modal .fechar, .modal1 .fechar, .modal2, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{
+        left: 20%;
+        margin-top: 39%;
+    }
+
+    .modal6 .fechar{
+        left: 20%;
+        margin-top: 41%;
+    }
+   .modal4 .fechar{
+        left: 20%;
+        margin-top: 37%;
+    }
+    .modal7 .fechar{
+        left: 20%;
+        margin-top: 37%;
+    }
+    .modal9 .fechar{
+        left: 20%;
+        margin-top: 35%;
+    }
+
+}
+@media (max-width: 770px){
+    .banner{
+        height: 440px;
+    }
+    .banner img{
+        margin-top: 18%
+    }
+    .circulo{
+        width: 58%;
+        margin-top: 28%;
+    }
+    .text h1{
+        
+        font-size: 3rem;
+    }
+    .text p{
+        margin-left: 45%;
+        font-size: 1.5rem;
+    }
+    .number{
+        margin-left: 40%;
+    }
+    .abrir{
+        margin-left: 82%;
+    }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{
+        top: 225%;
+        margin-left: 0;
+    }
+    .janela-modal4, .janela-modal5, .janela-modal6{
+        top: 250%;
+        margin-left: 0;
+    }
+    .janela-modal7, .janela-modal8, .janela-modal9{
+        top: 290%;
+        margin-left: 0;
+    }
+    .modal .fechar{margin-top: 46%;}
+    .modal1 .fechar{margin-top: 44%;}
+    .modal2 .fechar{margin-top: 48%;}
 }
 @media (max-width: 735px){
     .banner{
