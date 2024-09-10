@@ -256,10 +256,10 @@
     }
  /*   .modal1 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar, .modal7 .fechar{
         margin-top: 18%;
-    }
-    .modal2 .fechar, .modal3 .fechar, .modal6 .fechar, .modal9 .fechar{
-        margin-top: 18%;
     }*/
+    .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{
+        margin-top: 17%;
+    }
     .janela-modal.abrir, .janela-modal1.abrir, .janela-modal2.abrir, .janela-modal3.abrir, .janela-modal4.abrir, .janela-modal5.abrir, .janela-modal6.abrir, .janela-modal7.abrir, .janela-modal8.abrir, .janela-modal9.abrir{
         display: flex;
     }
@@ -757,12 +757,16 @@
     .circulo{
         margin-top: 26%;
     }
-    .modal7 .fechar, .modal9 .fechar{margin-top: 15%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 19%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 16%;}
+}
+@media (max-width: 2838px){
+    .modal7 .fechar, .modal9 .fechar{margin-top: 17.5%;}
 }
 @media (max-width: 2800px){
     .banner img{margin-top: 13%;}
     .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 18%;}
-    .fechar{margin-top: 19%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar {margin-top: 19.5%;}
 }
 @media (max-width: 2700px){
     .banner img{margin-top: 14%; width: 75%; margin-left: 14%;}
@@ -770,7 +774,9 @@
         font-size:8rem;
     }
     .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 20%;}
-    .fechar{margin-top: 20%;}
+}
+@media (max-width: 2650px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20%;}
 }
 @media (max-width: 2600px){
     .banner img{margin-top: 17%;}
@@ -779,7 +785,9 @@
 }
 @media (max-width: 2550px){
     .circulo{height: 105%;}
-    .fechar{margin-top: 21%;}
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 220%;}
+    .modal .fechar{margin-top: 22.5%;}
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 20.5%;}
 }
 @media (max-width: 2500px){
     .banner img{margin-top: 14%;}
@@ -788,11 +796,13 @@
     }
     .janela-modal h2{font-size: 3rem;}
     .descricao p{font-size: 2rem;}
-    .modal .fechar{
-        margin-top: 18%;
-    }
-    .fechar{margin-top: 19%;}
-    .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 17%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 19%;}
+    .modal4 .fechar,  .modal7 .fechar, .modal9 .fechar{margin-top: 16%;}
+}
+@media (max-width: 2450px){
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20%;}
+    .modal4 .fechar{margin-top: 18%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 17%;}
 }
 @media (max-width: 2400px){
     .circulo{margin-top: 32%;}
@@ -808,7 +818,12 @@
     .orcamento h1{
         margin-left: 25%;
     }
-    .fechar{margin-top: 20%;}
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 235%;}
+}
+@media (max-width: 2351px){
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20.5%;}
+    .modal4 .fechar{margin-top: 19%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 17%;}
 }
 @media (max-width: 2300px){
     .circulo{margin-top: 35%;}
@@ -816,10 +831,11 @@
         font-size: 2.5rem;
     }
     .descricao p{font-size: 1.5rem;}
-    .modal .fechar{margin-top: 15%;}
-    .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 15%;}
-    .modal5 .fechar, .modal8 .fechar{margin-top: 16%;}
-    .fechar{margin-top: 14%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal6 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 14.5%;}
+    .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 16%;}
+}
+@media (max-width: 2250px){
+    .modal3 .fechar{margin-top: 16%;}
 }
 @media (max-width: 2200px){
     .circulo{
@@ -1113,6 +1129,12 @@
     .icons ul li ion-icon:hover{
         transform: scale(1.1);
     }
+    .modal .fechar,.modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 18.5%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 15.5%;}
+}
+@media (max-width: 1950px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 19%;}
+    .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 16.5%;}
 }
 @media (max-width: 1915px){
     .banner img{
@@ -1123,13 +1145,13 @@
         margin-top: 26%;
     }
     .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 190%;}
-    .modal .fechar, .modal1 .fechar{
-        margin-top: 18;
-    }
-    .modal .fechar, .modal1 .fechar, .modal8 .fechar{margin-top: 19%;}
-     .modal7 .fechar{margin-top: 16%;}
+
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal8 .fechar{margin-top: 19.5%;}
     .modal4 .fechar{margin-top: 18%;}
-    .modal9 .fechar{margin-top: 17%;}
+}
+@media (max-width: 1865px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20%;}
+    .modal4 .fechar, .modal7 .fechar{margin-top: 18.5%;}
 }
 @media (max-width: 1800px){
     .circulo{
@@ -1146,12 +1168,15 @@
     .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar, .modal8 .fechar{margin-top: 20%;}
     .modal7 .fechar, .modal9 .fechar{margin-top: 19%;}
 }
+@media (max-width: 1750px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 21%;}
+}
 @media (max-width: 1700px){
     .circulo{
         height: 100%;
     }
     .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 260%;}
-    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 21%;}
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 21.5%;}
 }
 @media (max-width: 1670px){
     .banner img{
