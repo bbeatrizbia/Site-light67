@@ -2122,6 +2122,30 @@
     .abrir{
         margin-left: 82%;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{
+        margin-left: 0;
+    }
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 47%;}
+    .modal4 .fechar, .modal9 .fechar{margin-top: 44%;}
+    .modal6 .fechar{margin-top: 51%;}
+    .modal7 .fechar{margin-top: 42%;}
+}
+@media (max-width: 662px){
+    .modal .fechar{margin-top: 50%;}
+}
+@media (max-width: 651px){
+    .modal2 .fechar{margin-top: 50%;}
+    .modal6 .fechar{margin-top: 53%;}
+    .modal7 .fechar{margin-top: 45%;}
+}
+@media (max-width: 643px){
+    .modal3 .fechar, .modal8 .fechar{margin-top: 50%;}
+    .modal4 .fechar{margin-top: 45.5%;}
+}
+@media (max-width: 639px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 51.5%;}
+    .modal5 .fechar, .modal7 .fechar{margin-top: 48.5%;}
+    .modal9 .fechar{margin-top: 46%;}
 }
 @media (max-width: 600px){
     .banner{
@@ -2136,7 +2160,31 @@
     .number{
         margin-left: 42%;
     }
+    .modal .fechar, .modal1 .fechar, .modal3 .fechar, .modal4 .fechar{margin-top: 55%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 59%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 51%;}
+    .modal5 .fechar, .modal8 .fechar{margin-top: 57%;}
 }
+@media (max-width: 590px){
+    .modal .fechar, .modal1 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 57.5%;}
+    .modal2 .fechar{margin-top: 60.5%;}
+    .modal6 .fechar{margin-top: 63%;}
+    .modal7 .fechar,.modal9 .fechar{margin-top: 52%;}
+}
+@media (max-width: 580px){
+    .modal .fechar, .modal1 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 59%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 64%;}
+    .modal3 .fechar{margin-top: 56%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 53%;}
+
+}
+@media (max-width: 570px){
+    .modal .fechar, .modal1 .fechar, .modal4 .fechar{margin-top: 62.5%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 65%;}
+    .modal3 .fechar{margin-top: 60%;}
+    .modal7 .fechar{margin-top: 56%;}
+}
+@media (max-width: 560px){}
 @media (max-width: 510px){
     .banner{
         height: 300px;
