@@ -1416,16 +1416,16 @@
         font-size: 3rem;
     }
     /*-----Fim footer-----*/
-    }
-    @media (max-width: 1200px){
+}
+@media (max-width: 1200px){
         .circulo{
             height: 100%;
         }
     .fechar{font-size: 2rem;}
     .modal .fechar, .modal3 .fechar{margin-top: 25%;}
     .modal1 .fechar, .modal2 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 24%;}
-    }
-    @media (max-width: 1100px){
+}
+@media (max-width: 1100px){
         .banner img{
             width:72%;
             margin-top: 12%;
@@ -1445,8 +1445,8 @@
         .modal5 .fechar, .modal8 .fechar{margin-top: 29%;}
         .modal6 .fechar{margin-top: 31%;}
         .modal7 .fechar, .modal9 .fechar{margin-top: 25.5%;}
-    }
-    @media (max-width: 1000px){
+}
+@media (max-width: 1000px){
         .banner img{
             width:70%;
             margin-top: 12%;
@@ -1544,8 +1544,8 @@
             left: 20%;
             margin-top: 26.5%;
         }
-    }
-@media (max-width: 970px){
+}
+@media (max-width: 972px){
     .banner img{
         width:70%;
         margin-top: 12%;
@@ -1621,6 +1621,18 @@
     .number{
         margin-left: 42%;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{top: 265%;}
+    .janela-modal4, .janela-modal5, .janela-modal6{top: 310%;}
+    .janela-modal7, .janela-modal8, .janela-modal9{top: 350%;}
+    .modal .fechar, .modal1 .fechar, .mobile2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 31%;}
+    .modal4 .fechar, .modal7 .fechar .modal9 .fechar{margin-top: 29%;}
+    .modal6 .fechar{margin-top: 32%;}
+    
+}
+@media (max-width: 943px){
+    .modal .fechar, .modal1 .fechar, .modal6 .fechar{margin-top: 33.5%;}
+    .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 31.5%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 29.5%;}
 }
 @media (max-width: 900px){
     .banner{
@@ -1795,6 +1807,26 @@
     .redes h1{
         margin-left: 5%;
     }
+    .janela-modal, .janela-modal1, .janela-modal3{
+        margin-left: 0;
+        top: 245%;
+    }
+    .janela-modal2{
+        margin-left: 0;
+        top: 225%;
+    }
+    .janela-modal4, .janela-modal5, .janela-modal6{
+        margin-left: 0;
+        top: 288%;
+    }
+    .janela-modal7, .janela-modal8, .janela-modal9{
+        margin-left: 0;
+        top: 310%;
+    }
+    .modal .fechar, .modal2 .fechar, .modal8 .fechar{margin-top: 38%;}
+    .modal1 .fechar, .modal3 .fechar, .modal5 .fechar, .modal7 .fechar{margin-top: 36%;}
+    .modal4 .fechar, .modal9 .fechar{margin-top: 34%;}
+    .modal6 .fechar{margin-top: 40%;}
 
 }
 @media (max-width: 830px){
@@ -1962,17 +1994,23 @@
     }
    .modal4 .fechar{
         left: 20%;
-        margin-top: 37%;
+        margin-top: 37.5%;
     }
     .modal7 .fechar{
         left: 20%;
-        margin-top: 37%;
+        margin-top: 37.5%;
     }
     .modal9 .fechar{
         left: 20%;
-        margin-top: 35%;
+        margin-top: 35.5%;
     }
 
+}
+@media (max-width: 810px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar{margin-top: 41%;}
+    .modal6 .fechar{margin-top: 44%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 38%;}
+    .modal8 .fechar{margin-top: 42%;}
 }
 @media (max-width: 770px){
     .banner{
@@ -2012,8 +2050,10 @@
         margin-left: 0;
     }
     .modal .fechar{margin-top: 46%;}
-    .modal1 .fechar{margin-top: 44%;}
-    .modal2 .fechar{margin-top: 48%;}
+    .modal1 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 44%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 48%;}
+    .modal3 .fechar{margin-top: 42%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 40%;}
 }
 @media (max-width: 735px){
     .banner{
@@ -2040,6 +2080,25 @@
     .abrir{
         margin-left: 82%;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{
+        margin-left: 0;
+    }
+    .modal, .modal1, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9{width: 80%;}
+    .modal .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal7 .fechar, .modal9 .fechar{margin-top: 39%;}
+    .modal1 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 41%;}
+    .modal6 .fechar{margin-top: 43%;}
+    
+}
+@media (max-width: 730px){
+    .modal3 .fechar{margin-top: 41%;}
+}
+@media (max-width: 720px){
+    .modal .fechar, .modal1 .fechar{margin-top: 44%;}
+}
+@media (max-width: 700px){
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal6 .fechar{margin-top: 45%;}
+    .modal4 .fechar, .modal8 .fechar{margin-top: 43%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 40%;}
 }
 @media (max-width: 670px){
     .banner img{
