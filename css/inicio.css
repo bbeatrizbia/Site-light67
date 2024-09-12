@@ -2184,7 +2184,31 @@
     .modal3 .fechar{margin-top: 60%;}
     .modal7 .fechar{margin-top: 56%;}
 }
-@media (max-width: 560px){}
+@media (max-width: 560px){
+    .janela-modal, .janela-modal1, .janela-modal3{top: 215%;}
+    .janela-modal4, .janela-modal5, .janela-modal6{top: 270%;}
+    .modal .fechar, .modal2 .fechar{margin-top: 66.5%;}
+    .modal1 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 63%;}
+    .modal6 .fechar{margin-top: 69%;}
+    .modal7 .fechar{margin-top: 57.5%;}
+    .modal9 .fechar{margin-top: 54.5%;}
+
+}
+@media (max-width: 550px){
+    .modal, .modal1, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9{width: 95%;}
+    .modal .fechar{margin-top: 60%;}
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 57%;}
+    .modal4 .fechar, .modal7 .fechar{margin-top: 54%;}
+    .modal6 .fechar{margin-top: 62%;}
+}
+@media (max-width: 540px){
+    .modal2 .fechar, .modal3 .fechar, .modal8 .fechar{margin-top: 61%;} .modal7 .fechar{margin-top: 58%;}
+}
+@media (max-width: 530px){
+    .modal .fechar, .modal1 .fechar, .modal5 .fechar{margin-top: 61%;}
+    .modal4 .fechar{margin-top: 59%;}
+    .modal6 .fechar{margin-top: 65%;}
+}
 @media (max-width: 510px){
     .banner{
         height: 300px;
@@ -2230,6 +2254,42 @@
      .number{
         margin-left: 40%;
     }
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{top: 188%;}
+    .janela-modal4, .janela-modal5, .janela-modal6{top: 220%;}
+    .janela-modal7, .janela-modal8, .janela-modal9{top: 250%;}
+
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fecha, .modal4 .fechar, .modal5 .fechar{margin-top: 64%;}
+    .modal6 .fechar{margin-top: 70%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 60%;}
+    .modal8 .fechar{margin-top: 67%;}
+}
+@media (max-width: 500px){
+    .modal2 .fechar{margin-top: 70.5%;} .modal3 .fechar{margin-top: 65%;} .modal5 .fechar{margin-top: 68%;}
+}
+@media (max-width: 490px){
+    .modal .fechar, .modal1 .fechar, .modal4 .fechar, .modal8 .fechar{margin-top: 70%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 75.5%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 62%;}
+}
+@media (max-width: 480px){
+    .modal .fechar, .modal1 .fechar, .modal4 .fechar{margin-top: 74%;}
+    .modal2 .fechar, .modal6 .fechar{margin-top: 77%;}
+    .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 71%;}
+    .modal7 .fechar{margin-top: 67%;}
+
+}
+@media (max-width: 470px){
+    .modal .fechar,.modal2 .fechar{margin-top: 80%;}
+    .modal1 .fechar,.modal3 .fechar,  .modal4 .fechar{margin-top: 77%;}
+    .modal5 .fechar, .modal8 .fechar{margin-top: 75%;}
+    .modal6 .fechar{margin-top: 82%;}
+    .modal7 .fechar, .modal9 .fechar{margin-top: 67%;}
+
+}
+@media (max-width: 460px){
+    .modal5 .fechar, .modal8 .fechar{margin-top: 77%;}
+    .modal6 .fechar{margin-top: 84%;}
+    .modal7 .fechar{margin-top: 70%;}
 }
 @media (max-width: 450px){
     .banner{
@@ -2253,6 +2313,18 @@
     .redes .icons{
         margin-left: 7%;
     }
+    .modal .fechar, .modal2 .fechar{margin-top: 82%;}
+    .modal1 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal8 .fechar{margin-top: 80%;}
+    .modal6 .fechar{margin-top: 86%;}
+}
+@media (max-width: 440px){
+    .modal .fechar, .modal2 .fechar{margin-top: 85%;}
+    .modal6 .fechar{margin-top: 88%;}
+    .modal7 .fechar{margin-top: 73%;}
+    .modal9 .fechar{margin-top: 70%;}
+}
+@media (max-width: 430px){
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{top: 180%;}
 }
 @media (max-width: 395px){
     .abrir{
