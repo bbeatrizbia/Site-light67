@@ -1352,9 +1352,9 @@
     /*-----Fim header-----*/
     /*-----Início banner-----*/
     .banner img{
-        margin-top: 16%;
-        width: 80%;
-        margin-left: 11%;
+        margin-top: 10%;
+        width: 75%;
+        margin-left: 14%;
     }
     .circulo{
         margin-top: 27%;
@@ -1368,9 +1368,11 @@
         text-shadow: 2px 2px 5px white;
     }
     /*-----Fim slides-----*/
-    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 270%;}
-        .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 22%;}
-        .descricao p{font-size: 1rem ;}
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 230%;}
+    .modal .fechar{margin-top: 24.5%; margin-left: 27%;}
+    .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal4 .fechar, .modal5 .fechar, .modal6 .fechar, .modal7 .fechar, .modal8 .fechar, .modal9 .fechar{margin-top: 22.5%; margin-left: 27%;}
+    .modal .fechar{margin-top: 22.5%; margin-left: 27%;}
+    .descricao p{font-size: 1rem ;}
     /*-----Início sobre-----*/
     .orcamento h1{
         margin-left: 20%;
@@ -2368,7 +2370,7 @@
     .number{
         margin-left: 38%;
     }
-
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{margin-left: 0;}
 }
 @media (max-width: 340px){
     .circulo{
