@@ -2370,7 +2370,9 @@
     .number{
         margin-left: 38%;
     }
-    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3, .janela-modal4, .janela-modal5, .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{margin-left: 0;}
+    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{margin-left: 0; margin-top: 0%;} 
+    .janela-modal4, .janela-modal5, .janela-modal6{margin-left: 0; margin-top: 0%;}
+    .janela-modal7, .janela-modal8, .janela-modal9{margin-left: 0; margin-top: 0;}
 }
 @media (max-width: 340px){
     .circulo{
