@@ -1653,7 +1653,7 @@
     .janela-modal3, .janela-modal4, .janela-modal5{top: 265%;}
     .janela-modal6, .janela-modal7, .janela-modal8, .janela-modal9{top: 310%;}
     .fechar{font-size: 1.5rem;}
-    .modal .fechar, .modal1 .fechar, .modal2, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{
+    .modal .fechar, .modal1 .fechar, .modal2 .fechar, .modal3 .fechar, .modal5 .fechar, .modal8 .fechar{
         left: 20%;
         margin-top: 35%;
     }
@@ -2328,6 +2328,10 @@
 @media (max-width: 430px){
     .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{top: 180%;}
 }
+@media (max-width: 420px){
+    .modal .fechar, .modal2 .fechar{margin-top: 89%;}
+    .modal1 .fechar{margin-top: 85%;}
+}
 @media (max-width: 395px){
     .abrir{
         margin-left: 70%;
@@ -2370,9 +2374,6 @@
     .number{
         margin-left: 38%;
     }
-    .janela-modal, .janela-modal1, .janela-modal2, .janela-modal3{margin-left: 0; margin-top: 0%;} 
-    .janela-modal4, .janela-modal5, .janela-modal6{margin-left: 0; margin-top: 0%;}
-    .janela-modal7, .janela-modal8, .janela-modal9{margin-left: 0; margin-top: 0;}
 }
 @media (max-width: 340px){
     .circulo{
